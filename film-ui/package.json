@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack_prod.config.js"
   },
   "main": "./index.js",
-  "author": "Webbylab",
+  "author": "Sergey Vecherenko",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-cli": "6.16.0",
