@@ -1,0 +1,18 @@
+{
+    "extends": "webbylab",
+    "rules": {
+        "react/sort-comp": [2, {
+            "order": [
+                "static-methods",
+                "everything-else",
+                "lifecycle",
+                "/^get.+$/",
+                "/^compute.+$/",
+                "/^handle.+$/",
+                "/^render.+$/",
+                "render"
+            ]
+        }],
+        "more/no-window": 0
+    }
+}

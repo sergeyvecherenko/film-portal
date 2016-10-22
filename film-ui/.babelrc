@@ -1,0 +1,24 @@
+{
+    "presets": [
+        ["es2015", { "loose": true, "modules": false }],
+        "stage-0",
+        "react"
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                "react-hot-loader/babel",
+                "transform-decorators-legacy",
+                "transform-runtime",
+                "array-includes"
+            ]
+        },
+        "production": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "transform-runtime",
+                "array-includes"
+            ]
+        }
+    }
+}

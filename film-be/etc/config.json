@@ -1,0 +1,19 @@
+{
+    "staticUrl": "http://localhost:3000",
+    "appUrl": "http://localhost:8080",
+    "secret":  "secret",
+    "appPort":  8080,
+
+    "dbSettings":{
+        "user": "root",
+        "password": "123456",
+        "database": "sakila",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+
+    "facebook": {
+        "clientId":     "146606135804509",
+        "clientSecret": "93e561e45985ce56b62969e77114d999"
+    }
+}

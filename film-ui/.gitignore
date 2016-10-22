@@ -1,0 +1,7 @@
+node_modules
+jsconfig.json
+npm-debug.log
+typings
+.DS_Store
+jsconifig.json
+dist/static/build
