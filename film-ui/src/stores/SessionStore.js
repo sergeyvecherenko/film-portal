@@ -29,12 +29,10 @@ class SessionStore {
             const currentUser = jwtLib.decode(token, '', 'isSkipAuth');
 
             this.currentUser = currentUser;
+            viewStore.isInitied = true;
 
             if (location.pathname === '/') {
                 viewStore.setCurrentPage('films');
-                setTimeout(() => {
-                    viewStore.isInitied = true;
-                }, 300);
             }
         } catch (err) {
             if (!location.pathname.includes('setSession')) {
