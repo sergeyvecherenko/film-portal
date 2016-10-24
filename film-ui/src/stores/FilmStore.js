@@ -7,7 +7,11 @@ class FilmStore {
             'Page change reaction',
             () => this.page,
             () => {
-                this.fetchFilms();
+                if (this.timeout) clearTimeout(this.timeout);
+
+                this.timeout = setTimeout(() => {
+                    this.fetchFilms();
+                }, 500);
             }
         );
 

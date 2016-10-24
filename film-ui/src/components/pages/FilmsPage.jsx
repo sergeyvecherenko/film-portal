@@ -67,20 +67,20 @@ export default class FilmsPage extends Component {
                 <TextField
                     floatingLabelText='Title'
                     type='text'
-                    style={{ marginRight: 15, width: 130 }}
+                    style={{ maxWidth: 130 }}
                     onChange={this.handleInputChange.bind(this, 'title')}
                 />
                 <TextField
                     floatingLabelText='Description'
                     type='text'
-                    style={{ marginRight: 15, width: 130 }}
+                    style={{ maxWidth: 130 }}
                     onChange={this.handleInputChange.bind(this, 'description')}
                 />
                 <AutoComplete
                     floatingLabelText='Category'
                     filter={AutoComplete.caseInsensitiveFilter}
-                    textFieldStyle={{ width: 130 }}
-                    style={{ width: 130, marginRight: 15 }}
+                    textFieldStyle={{ maxWidth: 130 }}
+                    style={{ maxWidth: 130 }}
                     onUpdateInput={this.handleAutoInputChange.bind(this, 'category')}
                     onNewRequest={this.handleAutoInputChange.bind(this, 'category')}
                     dataSource={filters.categories}
@@ -88,8 +88,8 @@ export default class FilmsPage extends Component {
                 <AutoComplete
                     floatingLabelText='Actor'
                     filter={AutoComplete.caseInsensitiveFilter}
-                    textFieldStyle={{ width: 130 }}
-                    style={{ width: 130, marginRight: 15 }}
+                    textFieldStyle={{ maxWidth: 130 }}
+                    style={{ maxWidth: 130 }}
                     onUpdateInput={this.handleAutoInputChange.bind(this, 'actor')}
                     onNewRequest={this.handleAutoInputChange.bind(this, 'actor')}
                     dataSource={filters.actors}
@@ -97,8 +97,8 @@ export default class FilmsPage extends Component {
                 <AutoComplete
                     floatingLabelText='Language'
                     filter={AutoComplete.caseInsensitiveFilter}
-                    textFieldStyle={{ width: 130 }}
-                    style={{ width: 130, marginRight: 15 }}
+                    textFieldStyle={{ maxWidth: 130 }}
+                    style={{ maxWidth: 130 }}
                     onUpdateInput={this.handleAutoInputChange.bind(this, 'language')}
                     onNewRequest={this.handleAutoInputChange.bind(this, 'language')}
                     dataSource={filters.languages}
@@ -121,7 +121,7 @@ export default class FilmsPage extends Component {
                             label='Previous  page'
                             disabled={filmStore.page === 1}
                             primary
-                            style={{ width: 200 }}
+                            style={{ width: 136 }}
                             onTouchTap={this.handleChangePage}
                         />
                         <div>
@@ -132,7 +132,7 @@ export default class FilmsPage extends Component {
                             label='Next page'
                             disabled={filmStore.page === filmStore.lastPage}
                             primary
-                            style={{ width: 200 }}
+                            style={{ width: 136 }}
                             onTouchTap={this.handleChangePage.bind(this, 'inc')}
                         />
                     </div>
