@@ -1,3 +1,3 @@
 module.exports = window.MD_CONFIG = {
-    beUrl: 'http://localhost:8080/api/v1'
+    beUrl: 'https://film-project-sdsleon.c9users.io:8082/api/v1'
 };

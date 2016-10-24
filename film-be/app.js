@@ -19,7 +19,7 @@ const router = promiseRouter(express.Router);
 const checkSession = routes.sessions.check;
 const socialNetworksSession = session({ secret, resave: false, saveUninitialized: true });
 
-console.log('APP START SUCCEFULL ON PORT ', appPort);
+console.log('APP START SUCCEFULL ON PORT ', process.env.PORT);
 
 app.use(cors({ origin: '*' }));
 
@@ -59,9 +59,9 @@ router.get('/auth/facebook/callback', socialNetworksSession, (req, res, next) =>
     })(req, res);
 }, routes.socialNetworks.auth.bind(routes.socialNetworks));
 
-router.getAsync('/films',      routes.films.list);
-router.getAsync('/categories', routes.categories.list);
-router.getAsync('/actors',     routes.actors.list);
-router.getAsync('/languages',  routes.languages.list);
+router.getAsync('/films',      checkSession, routes.films.list);
+router.getAsync('/categories', checkSession, routes.categories.list);
+router.getAsync('/actors',     checkSession, routes.actors.list);
+router.getAsync('/languages',  checkSession, routes.languages.list);
 
 export default app;

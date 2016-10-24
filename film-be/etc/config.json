@@ -1,12 +1,12 @@
 {
-    "staticUrl": "http://localhost:3000",
-    "appUrl": "http://localhost:8080",
+    "staticUrl": "https://film-project-sdsleon.c9users.io:8081",
+    "appUrl": "https://film-project-sdsleon.c9users.io:8082",
     "secret":  "secret",
-    "appPort":  8080,
+    "appPort":  8082,
 
     "dbSettings":{
         "user": "root",
-        "password": "123456",
+        "password": "",
         "database": "sakila",
         "host": "127.0.0.1",
         "dialect": "mysql"
