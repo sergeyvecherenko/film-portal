@@ -40,7 +40,6 @@ export default class FilmCard extends Component {
             <Card
                 styleName='FilmCard'
                 style={{ marginBottom: 20, marginTop: 5 }}
-                onTouchTap={this.handleSelectAudit}
             >
                 <div styleName='header'>
                     <div styleName='chips'>

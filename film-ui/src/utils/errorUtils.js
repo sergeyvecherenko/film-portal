@@ -20,7 +20,7 @@ export function getErrorText(errorCode, options) {
         case 'TOO_HIGH':
             return 'Max size of the file is options.max MB';
         case 'NOT_ENOUGH_SPACE':
-            return 'Audit storage limit is exceeded';
+            return 'Film storage limit is exceeded';
         case 'NEED_FOR_VALIDATION':
             return 'To be able to send a question to validation, field must be filled';
         case 'NOT_UNIQUE' :

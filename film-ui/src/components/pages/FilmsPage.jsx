@@ -22,12 +22,6 @@ export default class FilmsPage extends Component {
         filmStore.fetchFilterData();
     }
 
-    handleCreateNew = () => {
-        const { viewStore } = this.props;
-
-        viewStore.setCurrentDialog('newAudit');
-    }
-
     handleInputChange = (type, e, value) => {
         const { filmStore } = this.props;
 
@@ -116,7 +110,7 @@ export default class FilmsPage extends Component {
     render() {
         const { filmStore } = this.props;
         const { isLoading } = filmStore;
-        const auditsList = this.renderFilms();
+        const filmsList = this.renderFilms();
 
         return (
             <div styleName='FilmsPage' >
@@ -146,8 +140,8 @@ export default class FilmsPage extends Component {
                 </div>
 
                 <div ref={content => this.content = content} styleName='content'>
-                    <div styleName='auditsList'>
-                        {auditsList}
+                    <div styleName='filmsList'>
+                        {filmsList}
                     </div>
                     <div styleName='loadingSection'>
                         {

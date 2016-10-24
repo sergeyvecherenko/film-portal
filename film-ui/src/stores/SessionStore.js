@@ -28,7 +28,7 @@ class SessionStore {
             this.currentUser = currentUser;
 
             if (location.pathname === '/') {
-                viewStore.setCurrentPage('audits');
+                viewStore.setCurrentPage('films');
                 setTimeout(() => {
                     viewStore.isInitied = true;
                 }, 300);
