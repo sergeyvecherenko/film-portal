@@ -17,7 +17,10 @@ class SessionStore {
         localStorage.setItem('session', token);
         this.currentUser = currentUser;
 
-        setTimeout(() => viewStore.setCurrentPage('films'), 0);
+        setTimeout(() => {
+            viewStore.isInitied = true;
+            viewStore.setCurrentPage('films');
+        }, 0);
     }
 
     @action restoreSession() {
