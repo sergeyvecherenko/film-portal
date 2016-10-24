@@ -1,7 +1,7 @@
 {
-  "name": "mrchant-portal-ui",
+  "name": "film-ui",
   "version": "0.1.0",
-  "description": "mrchant-portal-ui",
+  "description": "film-ui",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src --ext jsx js",
