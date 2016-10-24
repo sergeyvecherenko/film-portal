@@ -29,6 +29,7 @@ class ViewStore {
         );
     }
 
+    @observable isInitied = false;
     @observable currentPage = undefined;
 
     @computed get currentPath() {

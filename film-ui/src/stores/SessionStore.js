@@ -29,11 +29,16 @@ class SessionStore {
 
             if (location.pathname === '/') {
                 viewStore.setCurrentPage('audits');
+                setTimeout(() => {
+                    viewStore.isInitied = true;
+                }, 300);
             }
         } catch (err) {
-            console.log(location.pathname);
             if (!location.pathname.includes('setSession')) {
                 viewStore.setCurrentPage('landing');
+                setTimeout(() => {
+                    viewStore.isInitied = true;
+                }, 300);
             }
         }
     }

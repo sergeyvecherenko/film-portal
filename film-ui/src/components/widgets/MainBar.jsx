@@ -30,10 +30,10 @@ export default class MainBar extends Component {
             <div styleName='MainBar' >
                 <div>
                     <div>
-                        {currentUser.name}
+                        {currentUser && currentUser.name}
                     </div>
                     <div>
-                        {currentUser.email}
+                        {currentUser && currentUser.email}
                     </div>
                 </div>
                 <IconMenu
