@@ -1,5 +1,6 @@
 import { promisify } from 'bluebird';
 import jwt           from 'jsonwebtoken';
+import moment        from 'moment';
 import Base          from 'service-layer/Base';
 import X             from 'service-layer/Exception';
 import sequelize     from '../../sequelize';
@@ -27,6 +28,8 @@ export default class Check extends Base {
                     }
                 });
             }
+
+            console.log(userData.email, moment(Date.now()).format('MMMM Do YYYY, HH:mm:ss'), '+3h');
 
             return jwtVerify(token, secret);
         } catch (error) {
