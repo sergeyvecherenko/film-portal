@@ -28,15 +28,9 @@ export default class LandingPage extends Component {
                             className='LoginButton'
                             label='Login with Facebook'
                             primary
+                            onTouchTap={::this.handleLogin}
                             icon={<FontIcon className='muidocs-icon-custom-github' />}
-                        >
-                            <a
-                                styleName='link'
-                                onClick={::this.handleLogin}
-                                name='facebook'
-                                target='_blank'
-                            />
-                        </RaisedButton>
+                        />
                     </div>
                 </div>
             </div>

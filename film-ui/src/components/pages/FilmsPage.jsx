@@ -121,7 +121,7 @@ export default class FilmsPage extends Component {
                             label='Previous  page'
                             disabled={filmStore.page === 1}
                             primary
-                            style={{ width: 136 }}
+                            style={{ width: 140 }}
                             onTouchTap={this.handleChangePage}
                         />
                         <div>
@@ -132,7 +132,7 @@ export default class FilmsPage extends Component {
                             label='Next page'
                             disabled={filmStore.page === filmStore.lastPage}
                             primary
-                            style={{ width: 136 }}
+                            style={{ width: 140 }}
                             onTouchTap={this.handleChangePage.bind(this, 'inc')}
                         />
                     </div>
